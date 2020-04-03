@@ -25,3 +25,8 @@ In **Slicer**, python(v2.7) interpreter can be used. Mesh can be processed befor
 * scaling by maximum of absolute value per patients
 
 If you want to know the details, please confirm the python file which name is **aling_center_scale.py**
+
+### 4. Template mesh
+In **FRIST**, they used [MNI152](https://www.lead-dbs.org/about-the-mni-spaces/) for the segmentation. The input .nii MRI scan is registered to the MNI152 template, and then segmented. So, I reasonly used MNI152 template as our template also. 
+
+But, if you don't have proper template like my case, you can make your own template by averaging samples which you have. For the averaging meshs by **Sclier3D**, please reference the **make_mean_mesh.py**.
