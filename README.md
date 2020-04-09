@@ -8,11 +8,11 @@ Because the **FIRST** will be used for the segmetation, please install the FSL b
 ### 2. Segmentation
 By using **FIRST**, segment the parts of brain from target .nii file.  
 
-` > run_first_all -d -i target.nii -s L_Hipp -o output `
-* -d : prevents FIRST from deleting the masks for individual structures
+` > run_first_all -i target.nii -s L_Hipp -o output `
 * -i : input file name
 * -s : target part of brain
 * -o : output namespace, will get several files like output-L_Hipp_first.vtk, output_to_std_sub.mat, and etc
+* -d : prevents FIRST from deleting the masks for individual structures
 
 more details in https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FIRST/UserGuide
 
